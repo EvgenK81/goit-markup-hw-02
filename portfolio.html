@@ -1,93 +1,112 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+<>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Портфолто</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="">WebStudio</a>
-            <ul>
-                <li><a href="html">Студия</a></li>
-                <li><a href="html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+    <!---HEADER-PORTFOLIO--->
+    <header class="page-header">
+        <nav class="nav">
+            <a class="logo link" href="">Web<span class="logo-studio">Studio</span></a>
+            <ul class="menu list ">
+                <li class="menu-item">
+                    <a class="menu-link link" href="/index.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer">Студия</a></li>
+                <li class="menu-item">
+                    <a class="menu-link link" href="/portfolio.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer">Портфолио</a></li>
+                <li class="menu-item">
+                    <a class="menu-link link"  href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list">
+            <li class="menu-mailto"><a class="mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="menu-phon"><a class="phone link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
-    <main>
-        <h1 hidden>Портфолио</h1>
-        <section>
-            <ul>
-                <li><a href="">Все</a></li>
-                <li><a href="">Веб-сайты</a></li>
-                <li><a href="">Приложения</a></li>
-                <li><a href="">Дизайн</a></li>
-                <li><a href="">Маркетинг</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="./images/macbookpro.jpg" alt="Веб-сайт" width="370px">
-                    <h2>Технокряк</h2>
-                    <p>Веб-сайт</p>
+    
+ <main>
+            <!---portfolio--->
+            <h1 hidden>Портфолио</h1>
+        <section class="portfolio-menu" >
+            <!---filter--->
+            
+                <ul class=" filter-btn list">
+                    <li class="setting-btn"><button type="button" class="regulator-btn">Все</button></li>
+                    <li class="setting-btn"><button type="button" class="regulator-btn">Веб-сайты</button></li>
+                    <li class="setting-btn"><button type="button" class="regulator-btn">Приложения</button></li>
+                    <li class="setting-btn"><button type="button" class="regulator-btn">Дизайн</button></li>
+                    <li class="setting-btn"><button type="button" class="regulator-btn">Маркетинг</button></li>
+                </ul>
+            <!---photo--->
+            <ul class="list foto-menu">
+                <li class="foto-menu-item">
+                    <img class="foto-img" src="./images/macbookpro.jpg" alt="Веб-сайт" width="370">
+                    <h2 class="sentence">Технокряк</h2>
+                    <p class="sentence-choice">Веб-сайт</p>
                 </li>
-                <li>
-                    <img src="./images/basketball.jpg" alt="Дизайн" width="370px">
-                    <h2>Постер New Orlean vs Golden Star</h2>
-                    <p>Дизайн</p>
+                <li class="foto-menu-item">
+                    <img class="foto-img" src="./images/basketball.jpg" alt="Дизайн" width="370">
+                    <h2 class="sentence">Постер  New Orlean vs Golden Star</h2>
+                    <p class="sentence-choice">Дизайн</p>
                 </li>
-                <li>
-                    <img src="./images/restaurant.jpg" alt="Приложение" width="370px">
-                    <h2>Ресторан Seafood</h2>
-                    <p>Приложение</p>
+                <li class="foto-menu-item">
+                    <img class="foto-img" src="./images/restaurant.jpg" alt="Приложение" width="370">
+                    <h2 class="sentence">Ресторан Seafood</h2>
+                    <p class="sentence-choice">Приложение</p>
                 </li>
-                <li>
-                    <img src="./images/marketing.jpg" alt="Проект Prime" width="370px">
-                    <h2>Проект Prime</h2>
-                  <p>Маркетинг</p>
+                <li class="foto-menu-item">
+                    <img class="foto-img" src="./images/marketing.jpg" alt="Маркетинг" width="370">
+                    <h2 class="sentence">Проект Prime</h2>
+                  <p class="sentence-choice">Маркетинг</p>
                 </li>
-                <li>
-                    <img src="./images/boxes.jpg" alt="Проект Boxes" width="370px">
-                    <h2>Проект Boxes</h2>
-                    <p>Приложение</p>
+                <li class="foto-menu-item">
+                    <img class="foto-img" src="./images/boxes.jpg" alt="Приложение" width="370">
+                    <h2 class="sentence">Проект Boxes</h2>
+                    <p class="sentence-choice">Приложение</p>
 
                     
                 </li>
-                <li>
-                    <img src="./images/borders.jpg" alt="Веб-сайт" width="370px">
-                    <h2>Inspiration has no Borders</h2>
-                    <p>Веб-сайт</p>
+                <li class="foto-menu-item">
+                    <img class="foto-img" src="./images/borders.jpg" alt="Веб-сайт" width="370">
+                    <h2 class="sentence">Inspiration has no Borders</h2>
+                    <p class="sentence-choice">Веб-сайт</p>
                 </li>
-                <li>
-                    <img src="./images/limitededition.jpg" alt="Дизайн" width="370px">
-                    <h2>Издание Limited Edition</h2>
-                    <p>Дизайн</p>
+                <li class="foto-menu-item">
+                    <img class="foto-img" src="./images/limitededition.jpg" alt="Дизайн" width="370">
+                    <h2 class="sentence">Издание Limited Edition</h2>
+                    <p class="sentence-choice">Дизайн</p>
                 </li>
-                <li>
-                    <img src="./images/lab.jpg" alt="Проект LAB">
-                    <h2>Проект LAB</h2>
-                    <p>Маркетинг</p>
+                <li class="foto-menu-item">
+                    <img class="foto-img" src="./images/lab.jpg" alt="Маркетинг" width="370">
+                    <h2 class="sentence">Проект LAB</h2>
+                    <p class="sentence-choice">Маркетинг</p>
                 </li>
-                <li>
-                    <img src="./images/growingbusiness.jpg" alt="Growing Business">
-                    <h2>Growing Business</h2>
-                    <p>Приложение</p>
+                <li class="foto-menu-item">
+                    <img class="foto-img" src="./images/growingbusiness.jpg" alt="Приложение" width="370">
+                    <h2 class="sentence">Growing Business</h2>
+                    <p class="sentence-choice">Приложение</p>
                 </li>
             </ul>
         </section>
     </main>
-    <footer>
-        <a href="">WebStudio</a>
-        <ul>
-            <li> <a href="https://goo.gl/maps/FyTGyrduHnAwDV1Q6">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li> <a href="mailto:info@example.com">info@example.com</a></li>
-            <li> <a href="tel:+380991111111">+38 099 111 11 11</a></li>
+    <!---basement-->
+    <footer class="footer-menu">
+        <a class="logo link" href="">Web<span class="logo-studio-footer">Studio</span></a>
+        <ul class="list ">
+            <li class="footer-menu-markup"> <a class="footer-maps link" href="https://goo.gl/maps/FyTGyrduHnAwDV1Q6">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li class="footer-menu-markup"> <a class="footer-maps link" href="mailto:info@example.com">info@example.com</a></li>
+            <li class="footer-menu-markup"> <a class="footer-maps link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
     </footer>
             
