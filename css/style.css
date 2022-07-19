@@ -71,7 +71,7 @@ body {
      .logo{
           margin-right: 93px;
      }
-     .menu-item:not(last-child){
+     .menu-item:not(:last-child){
           margin-right: 50px;
      }
      .mailto{
@@ -143,10 +143,17 @@ body {
 
 /*HERO*/
 
+
 .hero{
+     
      background-color:#2F303A;
      padding-top: 200px;
      padding-bottom: 200px;
+}
+.hero-container{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
 }
 
 .title-hero {
@@ -163,10 +170,10 @@ body {
      color: #FFFFFF;
 }
 
+
 .btn-hero {
+     margin: auto;
      padding: 10px 32px;
-     display: inline-block;
-     min-width: 200px;
      font-family: 'Roboto', sans-serif;
      font-weight: 700;
      font-size: 16px;
@@ -180,8 +187,28 @@ body {
      color: var(--button-text-color);
  
 }
+/*Benefits*/
+.visually-hidden {
+     position: absolute;
+     white-space: nowrap;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     clip-path: inset(50%);
+     margin: -1px;
+}
+.smooth{
+     display: flex;
+}
+.Benefits-menu-item:not(:last-child){
+     margin-right: 30px;
+}
 
 .Benefits-menu {
+     margin-bottom: 10px;
      font-weight: 700;
      font-size: 14px;
      line-height: 1.4;
@@ -195,11 +222,13 @@ body {
      line-height: 1.71;
      letter-spacing: 0.03em;
      color: var(--secondari-color);
+     
 }
+
 
 /*direction*/
 .direction-title {
-
+    
      font-weight: 700;
      font-size: 36px;
      line-height: 1.17;
@@ -208,10 +237,35 @@ body {
 
      color: var(--primary-font-color);
 }
+.direction-menu-item{
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 50px;
+}
+.direction-menu-smooth:not(:last-child){
+     margin-right: 30px;
+}
+.direction-smooth{
+     display: flex;
+}
+
 
 /*TEAM*/
+.team{
+          
+     
+          background: #F5F4FA;
+}
+.team-img{
+     margin-bottom: 10px;
+}
+.team-menu-item:not(:last-child){
+     margin-right: 30px;
+}
 .team-title {
-
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 50px;
      font-weight: 700;
      font-size: 36px;
      line-height: 1.17;
@@ -219,10 +273,13 @@ body {
      letter-spacing: 0.03em;
 
      color: var(--primary-font-color);
+}
+.team-menu-smooth{
+     display: flex;
 }
 
 .team-name {
-
+     margin-bottom: 10px;
      font-weight: 500;
      font-size: 16px;
      line-height: 1.19;
@@ -252,7 +309,13 @@ body {
 }
 
 .footer-menu {
-     background-color: #2F303A;
+     position: absolute;
+          width: 1600px;
+          height: 252px;
+          left: 0px;
+          top: 2094px;
+     
+          background: #2F303A;
 }
 
 .footer-maps {
